@@ -554,7 +554,7 @@ export default function WorkoutGeneratorPage() {
                     <div className="nutr-title">🥗 Nutrition Guidance</div>
                     {Object.entries(workout.nutrition).map(([k,v]:any) => (
                       <div className="nutr-row" key={k}>
-                        <span className="nutr-lbl">{k.replace(/([A-Z])/g,' $1').replace(/^./,s=>s.toUpperCase())}</span>
+                        <span className="nutr-lbl">{k.replace(/([A-Z])/g,' $1').replace(/^./,(s:string)=>s.toUpperCase())}</span>
                         <span className="nutr-val">{v}</span>
                       </div>
                     ))}

@@ -102,7 +102,7 @@ export default function LeaderboardPage() {
       const today = new Date(); today.setHours(0,0,0,0);
       let streak = 0;
       for (let i = 0; i < dates.length; i++) {
-        const d = new Date(dates[i]); d.setHours(0,0,0,0);
+       const d = new Date(dates[i] as string); d.setHours(0,0,0,0);
         if (Math.round((today.getTime() - d.getTime()) / 86400000) <= i + 1) streak++;
         else break;
       }

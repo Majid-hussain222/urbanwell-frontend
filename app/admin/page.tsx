@@ -785,9 +785,9 @@ export default function AdminPanel() {
                     Reviews are linked to trainers and nutritionists. Navigate to their individual profiles to see all reviews and ratings.
                   </div>
                   <div style={{display:'flex',gap:12,justifyContent:'center',marginTop:20}}>
-                    <a href="/trainers" style={{textDecoration:'none'}} className="btn-sm btn-primary-sm" style={{padding:'9px 20px',borderRadius:9,fontSize:13}}>🏋️ View Trainers</a>
-                    <a href="/nutritionists" style={{textDecoration:'none'}} className="btn-sm btn-ghost-sm" style={{padding:'9px 20px',borderRadius:9,fontSize:13}}>🧬 View Nutritionists</a>
-                  </div>
+                    <a href="/trainers" style={{textDecoration:'none',padding:'9px 20px',borderRadius:9,fontSize:13}} className="btn-sm btn-primary-sm">🏋️  View Trainers</a>
+                    <a href="/nutritionists" style={{textDecoration:'none',padding:'9px 20px',borderRadius:9,fontSize:13}} className="btn-sm btn-ghost-sm">🧬 View Nutritionists</a>
+             </div>
                 </div>
               </div>
             )}
